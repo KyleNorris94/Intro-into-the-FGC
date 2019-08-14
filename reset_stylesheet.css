@@ -1,0 +1,41 @@
+ /*
+CSS Index.html Style Sheet
+Author: Kyle Norris
+Date: 07/12/2019
+V1 Assignment
+
+*/
+ 
+ html,  body, header, ul, ol, nav, 
+li, a, h1, header, img, p, h2, h3, article, nav ul,nav a,article#etcs, article#COMM, article#Growth,article#History, 
+body > header > img, article, article#list,div.col-1-3, div.col-2-3,
+ footer {
+    display: block; 
+    background:transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+  
+    vertical-align: baseline; 
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box; 
+} 
+
+ /*OTHER COMMENTS
+ <p>This tournament is a Street Fighter focused game. It&#39;s a qualifier for the prestigious Capcom Pro Tour. </p>
+   <img src="capcom.jpg" alt ="cpcom" />
+   <p>Actually ran by Capcom themselves, it is held in the San Francisco area. This tournament is currently focusing on Street Fighter 5. This tournament is a prime example of when passionate players meet the corporate landscape.</p>
+   <img src="jpg.jpeg" alt ="Pro">
+    <p>Often Called the  <a href="https://en.wikipedia.org/wiki/Apex_(tournament)#apex">&#39; Superbowl of Smash Bros &#39;</a><!--M1LO13C Demonstrate a hyperlink to an external page (HTML)-->, this tournament is the largest Smash bros tournament other than EVO. Although it is no longer recognized as a major event, it is still fairly prestigious as far as tournaments are concerned.</p>
+   <img src="apex.png" alt ="Apex" />
+   
+   
+   <p>This tournament is a Street Fighter focused game. It&#39;s a qualifier for the prestigious Capcom Pro Tour. </p>
+  
+   <p></p>
+   <img src="jpg.jpeg" alt ="Pro">
+   
+   <p>Often Called the  <a href="https://en.wikipedia.org/wiki/Apex_(tournament)#apex">&#39; Superbowl of Smash Bros &#39;</a><!--M1LO13C Demonstrate a hyperlink to an external page (HTML)-->, this tournament is the largest Smash bros tournament other than EVO. Although it is no longer recognized as a major event, it is still fairly prestigious as far as tournaments are concerned.</p>
+   <img src="apex.png" alt ="Apex" />
+   */

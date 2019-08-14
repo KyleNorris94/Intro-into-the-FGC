@@ -1,0 +1,836 @@
+@charset "utf 8";
+@font-face{
+    font-family: Open Sans, sans-serif; 
+    src:url(OpenSans.tff);
+}
+
+/*
+CSS Index.html Style Sheet
+Author: Kyle Norris
+Date: 07/12/2019
+V1 Assignment
+
+*/
+/*M2L03A&B are pages 92&93 in book. Use to help better organize and prioritize specific rules
+/*Remeber to size website */
+
+
+/*=====
+base styles 
+=======*/
+/* Main Structural Styles */
+
+html {
+height:100%;
+text-align: center;
+background-image: url(htmlB.jpeg);
+background-size: cover;
+}
+/* for my css gradients I did use generators. the main 2 I used were: https://www.css-gradient.com/ and https://mycolor.space/gradient */
+/*EVO STYLES */
+
+body#EVO { 
+     margin-left: auto;
+    margin-right: auto;
+       background: url(bodyevo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+
+}
+body#EVO  header {
+
+background: rgba(232, 124, 213, 1);
+background: -webkit-radial-gradient(center, rgba(232, 124, 213, 1), rgba(158, 83, 82, 1));
+background: -moz-radial-gradient(center, rgba(232, 124, 213, 1), rgba(158, 83, 82, 1));
+background: radial-gradient(ellipse at center, rgba(232, 124, 213, 0.8), rgba(158, 83, 82, 0.9));
+}
+body#EVO main {
+    
+background: rgba(232, 124, 213, 1.0);
+background: -webkit-radial-gradient(center, rgba(232, 124, 213, 1), rgba(158, 83, 82, 1));
+background: -moz-radial-gradient(center, rgba(232, 124, 213, 1), rgba(158, 83, 82, 1));/* M4L04 gradient. also make sure to add proper webkit */
+background: radial-gradient(ellipse at center, rgba(232, 124, 213, 0.8), rgba(158, 83, 82, 0.9));
+}
+ header h1 {
+    border-bottom: 2px solid black;
+    color:black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+vertical-align: center;
+height: 15px;
+padding: 30px;
+font-family: sans-serif;
+font-size: 2.2em;
+font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+body#EVO main > figure, caption{
+     opacity: 1;
+    color:black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+vertical-align: center;
+height: 15px;
+padding: 30px;
+font-family: sans-serif;
+font-size: 0.87em;
+font-weight: bold;
+}
+
+
+body#EVO footer {
+    width: 100%;
+    background: red;
+}
+ img.ash {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*pro players */
+body#pp {
+    background: url(vidgam.jpg) no-repeat;
+
+background-position:center;
+background-repeat: no-repeat;
+ background-size: 100% 100%;
+
+    
+}
+main#ProP {
+    /* M5L05 used to style these sections*/
+    display: -webkit-flex;
+    display: flex;
+flex-direction: row;
+flex-wrap:nowrap;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+
+}
+
+main#ProP figcaption {
+    background: rgba(222, 222, 235, 100);
+    opacity: 0.95;
+     
+}
+
+main#ProP figure.ProP {
+  -webkit-flex: 2 1 auto;
+  flex: 2 1 200px;/* M5L06 used to style these sections*/
+    border: 2.89px solid black;
+    order: 99;
+    align-self: center;
+    box-shadow: 12px 12px 12px gray;
+    width: 100%;
+}
+
+figure.ProP > img {
+    width: 100%;
+    border-bottom:2.89px solid black;
+    margin-left:auto;
+    margin-right:auto;
+ 
+}
+
+ header.steel {
+    background-image: url(steel.jpg);
+}
+html#ProP2 {
+background-image:  linear-gradient(45deg, #77ad8e, #80af86);
+}
+/*styles for rest of site*/
+
+figaption.DBZ, figaption.SC6 {
+text-align: right;
+}
+/* Heading Styles */
+header, ul, nav, li, a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;/* M3LO11 purpose is to allow more flexibilty among various computer models(whether old or new) to access the website */
+    box-sizing: border-box;
+}
+header {
+    border: 2px solid gray;
+}
+h1 {
+    height: 56px;
+    display: block;
+    vertical-align: middle;
+    font-size: 2em;
+    line-height: 1em;
+     font-family: Helvetica, sans-serif;
+  
+}
+header > h3 {
+    color: black;
+        vertical-align: center;
+    line-height: 0.8em;
+    font-family: Helvetica, sans-serif;
+    line-Height:2em;
+        /*get rid of top border */
+}
+/*article section */
+article#History {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 25px;
+    margin: 25px;
+    border-width: 23px;
+}
+article#Growth {
+        text-align: center;
+    font-size: 1.2em;
+    padding: 25px;
+    margin: 25px;
+    border-width: 23px;
+    position: relative;
+}
+article#COMM 
+{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 25px;
+    margin: 25px;
+    border-width: 23px;
+}
+article#etcs {
+      text-align: center;
+    font-size: 1.2em;
+    padding: 25px;
+    margin: 25px;
+    border-width: 23px;
+}
+/*table section */
+
+table.Updates {/* M6L07 Here is where I styled my table- I added borders, gave a border collapse to seperate and gave a gray background */
+    background: gray;
+    border: 1.5px outset rgb(34, 89, 223);
+   
+    font-size: 0.82em;
+    width: 75%;
+    box-shadow: rgb(34, 45, 67) 15px 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+                
+}
+col#firstCol {
+    background: rgb(151, 151, 151);
+width: 33%;
+}
+col.daycols {
+    background: rgb(51, 173, 151);
+   width:34%;
+}
+
+table.Updates th tr td, tbody tfoot {
+  height: 50px;
+  border: 0.5px solid gray;
+  padding: 2px;
+  vertical-align: center;
+}
+table.champs {
+    background: gray;
+    border: 1.5px outset rgb(34, 89, 223);
+  
+    font-size: 0.82em;
+    width: 75%;
+    box-shadow: rgb(34, 45, 67) 15px 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table.champs thead > tr th {
+text-align: center;
+vertical-align: center;
+height: 15px;
+padding: 30px;
+font-family: sans-serif;
+font-size: 0.87em;
+font-weight: bold;
+}
+table.champs thead > tr td {
+text-align: center;
+vertical-align: center;
+height: 35px;
+height: 15px;
+padding: 30px;
+font-family: sans-serif;
+font-size: 0.87em;
+}
+
+table#Updates {/*keep this on table while updating */
+    border-radius: 40px 47px 80px;/* M4L05, box-shadowing, enveloping table in a box-shadow */
+     border-left: 5px solid rgb(26, 56, 89);
+    border-right: 5px solid rgb(26, 56, 89);
+    box-shadow: rgb(26, 56, 89) 15px 15px 75px,
+            rgb(26, 56, 89) -15px -15px 75px;
+}
+table.champs caption {
+    
+    color:black;
+     margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+vertical-align: center;
+height: 15px;
+padding: 30px;
+font-family: sans-serif;
+font-size: 2.2em;
+font-weight: bold;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Structural Styles */
+article{ /*M2LO3B Demonstrate style inheritance, turned all the articles this color */
+    background-color: hsl(137, 52%, 83%);
+    background-color: rgb(189, 234, 202);  
+}
+article#Growth blockquote > a:link, article#Growth blockquote > a:visited {
+    color: hsl(9, 64%, 39%);
+    color:rgb(163, 55, 36) ;
+    text-decoration: none;
+}
+
+
+
+article#Growth blockquote > a:hover, article#Growth blockquote > a:active {
+    color: hsl(95, 94%, 15%);
+    color:rgb(32, 74, 2) ;
+    text-decoration: underline;
+}
+
+/*List Styles */
+ol > li:first-of-type{/*M2LO11A My first of type selector*/
+     color: hsl(4, 63%, 19%);
+   color: rgb(79, 22, 18);
+   
+}
+ol > li:nth-of-type(2){
+    color: hsl(4, 63%, 19%);
+   color: rgb(79, 22, 18);
+}
+ol > li:nth-of-type(3){
+    color: hsl(4, 63%, 19%);
+   color: rgb(79, 22, 18);
+}
+ol > li:last-of-type{
+ color: hsl(4, 63%, 19%);
+   color: rgb(79, 22, 18);
+}
+article#list {
+    display: block;
+    text-align: center;
+    padding: 23px;
+    margin: 23px;
+float: left;
+clear: left;
+width: 70%;
+height: 65%;
+position: inherit;
+left: 320px;
+}
+ol.list > li > figure img {
+	width: 100%;
+	border: 2px solid black;
+	margin-left:auto;
+	
+}
+
+ol.list > li > figure{
+
+	border: 2px solid black;
+}
+ol.list {/* M2LO6B  used an element.class */
+    line-height:1em;
+    float: left;
+}
+ol.list {
+    display: block;
+    text-align: center;
+    padding: 23px;
+    margin: 23px;
+float: right;
+clear: right;
+width: 70%;
+height: 65%;
+position: inherit;
+left: 320px;
+
+}
+ol.list > li img {
+     float: left;
+    clear: left;
+    width: 60%;
+    
+}
+
+ul#col li{
+display: block;
+    text-align: center;
+    padding: 23px;
+    margin: 23px;
+float: right;
+clear: right;
+width: 70%;
+height: 65%;
+position: inherit;
+left: 320px;
+
+}
+ul#col > li img {
+    float: right;
+    clear: right;/*M3LO3 Demonstrate a clearing float*/
+    width: 60%;
+   
+    
+}
+div[class^="col-1-3"] {
+    float: left; 
+    background-color: hsl(137, 52%, 83%);
+    background-color: rgb(189, 234, 202);  
+}
+div[class^="col-2-3"] {
+    float: right;
+    background-color: hsl(137, 52%, 83%);
+    background-color: rgb(189, 234, 202);  
+}
+
+a[href="index.html#SoulCalibur"] {/*M2LO7 used an a[href]*/
+    font-family: Georgia;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* aside Styles */
+aside {
+border-style: solid;
+float: right;
+ position: relative;
+bottom: 2800px;
+left: 452px;
+-webkit-border-radius: 35px 35px 45px  20px;
+-moz-border-radius: 35px 35px 45px  20px;
+border-radius: 35px 35px 45px  20px;  
+width: 30%;
+opacity: 0.95;
+background-image: linear-gradient(55deg, #b0bed5, #a4b3e9, #aba4f7, #c38efb, #e56ef0);
+}
+aside#twitch{
+    border-style: solid;
+float: right;
+position: relative;
+bottom: 2900px;
+left: 702px;
+-webkit-border-radius: 35px 35px 45px  20px;
+-moz-border-radius: 35px 35px 45px  20px;
+border-radius: 35px 35px 45px  20px;  /*M4L03 use of rounded borders*/
+width: 30%;
+opacity: 0.95;
+background-image: linear-gradient(55deg, #b0bed5, #a4b3e9, #aba4f7, #c38efb, #e56ef0);
+}
+aside#twitch > img.twitch {
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Page Header Styles */
+h3#history { /*M2LO3A Demonstrate style precedence in CSS, all these below included */
+line-Height: 1.2em;
+padding: 7px 5px 19px 9px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+h3#Tournament {
+line-Height: 1.2em;
+padding: 7px 5px 19px 9px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+h3#comm {
+line-Height: 1.2em;
+padding: 7px 5px 19px 9px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+h3#Growth {/*M2LO6A  Demonstrate a CSS id selector*/
+line-Height: 1.2em;
+padding: 7px 5px 19px 9px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+/*majors styles */
+h3#majors {
+line-Height: 1.2em;
+padding: 7px 5px 19px 9px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+h3#cos {
+    line-Height: 1.2em;
+padding: 7px 5px 19px 9px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+/* Horizontal Navigation List Styles */
+body > header > nav.horizontal li { 
+
+    display: block;
+    width: 20%;
+   float: left;
+   background-color: hsl(85, 100%, 77%);
+}
+body > header > nav > nav.horizontal ul.row li { 
+
+    display: block;
+    width: 20%;
+   float: left;
+   background-color: hsl(85, 100%, 77%);
+}
+ nav.horizontal > ul.row > li { 
+
+    display: block;
+    width: 20%;
+   float: left;
+   background-color: hsl(85, 100%, 77%);
+}
+
+
+/*paragraph Styles */
+p#take{
+	border-bottom: 2px solid black;
+}
+
+p { 
+    font-family: Comic Sans MS, Trebuchet MS, sans-serif;/*M2LO13 Demonstrate how CSS can change presentation of textual elements */
+    font-size: 0.8em;
+    padding: 12px;
+    margin: 10px;
+}
+p::first-letter { /*M2LO11B Demonstrate a pseudo-element selector M2LO12 Made the beginning letter of each paragraph capitalized and bold*/
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+p.smsh {
+    text-align: left;
+      
+}
+p.right {
+    text-align: center;
+    padding: 0.7%;
+    margin: 0.7%;
+}
+p.left {
+
+    display: block;
+    text-align: center;
+}
+p.rite {
+   
+   left: 29px;
+    display: block;
+    text-align: right;
+}
+/*image section */ 
+body > header > img {/* M2LO5A parent descendent*/
+    display: block;
+    width: 100%;
+border-bottom: 2.9px solid gray;
+}
+
+ body > img {/* M2LO5A parent descendent*/
+    display: block;
+    width: 100%;
+}
+
+figure img{
+	width: 20%;
+	margin-left: 10px;
+}
+img.DBZ {
+	margin-right: 10px;
+}
+img.SC6 {
+	margin-right: 10px;
+}
+img.tok {
+    display: block;
+width: 200px;
+}
+   figure.rite img {
+    float: right;
+    margin: 2px;
+}
+    
+img.vikitty  {
+    width: 12%;
+    opacity: 0.55;/*M4L06 used to create this  effect */
+}
+img.sajam  {
+    width: 12%;
+    opacity: 0.55;/*M4L06 used to create this  effect */
+}
+img.jchen  {
+    width: 12%;
+    opacity: 0.55;/*M4L06 used to create this  effect */
+}
+img.D1  {
+    width: 12%;
+    opacity: 0.55;/*M4L06 used to create this  effect */
+}
+img.GRV, img.mk,img.yuk,img.clear, img.go, img.inf, img.ash, img.ash, img.bon   {
+    width: 100%;
+}
+
+html#About header {
+    background-image:url(WA.png);
+}
+img.pacman {
+    width: 20%;
+}
+img.jojo {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.mbay {
+    float: right;
+    display: block;
+    width: 37%;
+}
+/* div styles */
+div.col-1-3 {
+   float: left;
+   clear: left;
+   width: 33%;
+}
+div.col-2-3 {
+   float: right;/*M3LO2 floated the 2/3 to the right */
+   clear: right;
+   width: 67%;
+}
+
+
+/* Footer Styles */
+
+    footer {
+        background-color: hsl(345, 83%, 56%);/*M2LO15B contextual selector*/
+               background-color: rgb( 245, 41, 94);
+            clear: both;
+            width: 100%;
+}
+footer::after { /*inserted container collapse*/
+
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+/* ===
+mobile styles: 0 to 480 pixels
+======*/
+
+@media only screen and (max-width: 480px) {
+/*style rules*/
+    ul.submenu {/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
+          display: none;
+          position:absolute;
+          width: 100%;
+        
+          
+}
+          
+    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {/*M5L04 helped to create a pulldown */
+        display: block;
+            
+        
+}
+nav.horizontal {
+    font-size: 1.2em;
+    line-height: 2.2em;
+
+       }
+    ul.submenu  a{/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
+       box-shadow: rgba(0, 0, 1, 0.7) 1px 1px 1px 1px;
+          float: left;
+          width: 100%;
+          position: relative;
+}
+
+body#INDEX {/*M5L07used tp style the index*/
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+width: 100%;
+     margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(137, 52%, 83%); /*M2LO15 mainline color */
+    background-color: rgb(189, 234, 202); 
+}
+body#INDEX > header h1 {
+
+font-size: 1em;
+}
+
+figure.rite img {
+    width: 70%;
+    float: right;
+}
+header, footer {  
+    width: 100%;
+}
+section#part1 {
+    display:-webkit-box;
+    display: -moz-box;
+    display:-ms-flexbox;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+   flex-basis: 250px;
+flex-grow: 1;
+flex-shrink: 2;
+    text-align: center;
+}
+section#part2 {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+flex-basis: 200px;
+flex-grow: 2;
+flex-shrink: 1;
+    text-align: center;
+} 
+div.row, div.col-1-3, div.col-2-3 {
+    display: none;
+}
+section#COMM > a {
+    display: none;
+}
+}
+
+/* ===
+Tablet styles: 481 pixels and greater
+======*/
+    @media only screen and (min-width: 481px) {
+          ul.submenu {
+          display: none;
+               position:absolute;
+          width: 100%;
+}
+    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+        display: block;
+}
+    ul.submenu  a{/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
+       box-shadow: rgba(0, 0, 1, 0.7) 1px 1px 1px 1px;
+          float: left;
+          width: 100%;
+          position: relative;
+}
+body#INDEX {/*M5L07used tp style the index*/
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+width: 100%;
+     margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(137, 52%, 83%); /*M2LO15 mainline color */
+    background-color: rgb(189, 234, 202); 
+}
+header, footer {
+    
+    width: 100%;
+}
+div.row, div.col-1-3, div.col-2-3 {
+    display: none;
+  
+}
+section#COMM > a {
+    display: none;
+}
+    }
+
+/* ===
+Desktop styles: 769 pixels and greater
+======*/
+    @media only screen and (min-width: 769px) {
+
+        ul.submenu {
+          display: none;
+               position:absolute;
+          width: 100%;
+}
+    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+        display: block;
+}
+    ul.submenu  a{/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
+       box-shadow: rgba(0, 0, 1, 0.7) 1px 1px 1px 1px;
+          float: left;
+          width: 100%;
+          position: relative;
+}
+header, footer {
+    width: 100%;
+}
+ main {
+     width: 100%;
+    flex: 1 1 auto;
+}
+body { 
+     margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(137, 52%, 83%); /*M2LO15 mainline color */
+    background-color: rgb(189, 234, 202);          /*M2LO14 gave the backup color option as well */
+    width: 95%;
+    min-width: 769px;
+    max-width: 1080px;
+    min-height: 100%;       
+       flex: 1 3 auto;     
+}
+div.row, div.col-1-3, div.col-2-3 {
+    display: block;
+        flex: 2 1 482px;
+}
+
+div.row, div.col-1-3, div.col-2-3 figcaption {
+    flex: 1 2 auto;
+    font-size:100%;
+}
+}
+
+

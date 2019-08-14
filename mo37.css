@@ -1,0 +1,62 @@
+@charset "utf 8";
+@font-face{
+    font-family: Open Sans, sans-serif; 
+    src:url(OpenSans.tff);
+}
+
+/*
+CSS mo37.html Style Sheet
+Author: Kyle Norris
+Date: 08/08/2019
+V2 Assignment
+
+*/
+/*M2L03A&B are pages 92&93 in book. Use to help better organize and prioritize specific rules
+/*Remeber to size website */
+
+/* Main Structural Styles */
+
+html {
+    background-image: url(chunli.jpg), url(ryu.jpg);/* M4L02 2 background images */
+background-position:left, right;   
+background-repeat: no-repeat, no-repeat;
+ background-size: 30% 100%, 30% 100%;
+
+    
+
+
+}
+
+figure {
+    perspective: 500px;
+ 
+}
+figure.jwong {
+  float: left;
+    width: 60%;
+position: relative;
+right: 12%;
+ transform: rotateZ(-25deg) rotateY(23deg) rotateX(-23deg);  /* M4L08 used to shift the picture slightly up */
+ }
+ 
+figure.Duma {
+ float: right;
+ width: 60%;
+position: relative;
+top: 12px;
+right: 14px;
+ transform: rotateZ(15deg) rotateY(15deg) rotateX(15deg);  /* M4L08 used to shift the picture slightly up */
+ /*display: -webkit0box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+ flex-flow: column nowrap;
+ */}
+ figure.Duma img, figure.jwong img{
+margin-left: auto;
+margin-right: auto;
+ }
+ body, footer {
+     width: 100%;
+ }
