@@ -23,24 +23,43 @@ V1 Assignment
     <h1>About!</h1>
     <h4>Geeking it out one day at a time</h4>
     <img src="use.png" class="pacman" alt ="EVO">
-     <nav class="horizontal"><!--for css styling you might have to put in nav class=horizontal and ul class=row. keep in mind -->
+<nav class="horizontal"><!--for css styling you might have to put in nav class=horizontal and ul class=row. keep in mind -->
+<a id="icon" href="#">
+<img src="menu.png" alt="menu" />
+</a>
       <ul class="row"><!--M1LO12 made horizontal-->
            <li><a href="index.html">Home</a></li>
             <li><a href="mo37.html">Moment 37</a></li>
-            <li><a href="proplayers.html">Pro Players</a></li>
+            <li><a href="proplayers.html">Pro players</a></li>
             <li><a href="EVO.html">EVO</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About</a><li>
             </ul>
-            </nav>
+</nav>
          </header>
          
       
+<form id="Survey" action="https://example.com/" method="post">
+<fieldset id="surInfo">
+<label for="question3">Should there be a Fighting Game Tournament held at Olympic College?</label><!--M7LO5 use of text box to ask if people want a tournament-->
+<input name="Question" id="question3" type="text" placeholder="Yes/No" required /><br />
+<label for="question2">What kind of Fighting games would you like to see there?</label><!--Make a pre-determined list of games-->
+<select name="question2Type" id="question2"><!--M7LO8 us of a selection list to ask what kind of games people want to play-->
+<option>BlazBlu</option>
+<option>King of Fighters</option>
+<option>Smash Brothers Ultimate</option>
+<option>Soul Calibur 6</option>
+<option>Street Fighter</option>
+<option>Tekken 7</option>
+</select><br />
+<input type="submit" value="submit"><!--M7LO10 Creation of a submit button-->
+<!--insert text area box asking what would it take to have them attend-->
+</fieldset>
+</form>
 
-
       
       
       
-      <table class="Updates"><!--M6L03Created a table to showcase my version progress-->
+      <table class="Updates"><!--M6LO3Created a table to showcase my version progress-->
       <caption>Updates</caption>
       <colgroup>
       <col id="firstCol" />
@@ -65,20 +84,29 @@ the hardest part for me was the mobile section and learning how to do flexboxes.
      </tr>
       <tr>
       <th>v3</th>
-          <td>Coming</td>
-      <td>soon</td>
+          <td>What were added: a text box in a form, selection lists in a form, and the use of a submit button in a form from Mod7, M8 I added audio, I had used some music from Amazon.com and using it just for educational purposes. It shall be removed at the end of the quarter. I add some iframes in the about page as well as the mo37 page. </td>
+      <td>For the final requirements for Module7-8 I added an animation sequence to the look at the fanart section, making it transition with an ease-in, and ease. Lastly, I had fixed some of the problems from v2 such as inconsistent navigation, letter size, picture scaling and some font readjusting. The hardest part for me was going back to fix what I had missed.  </td>
      </tr>
      </thead>
      <tbody>
      <tr>
      <th>Take a slight moment to pay respects for Waluigi, as we the fans continue to fight to put him into Smash Bros Ultimate</th>
-     <td colspan="2"><iframe width="560" height="315" src="https://www.youtube.com/embed/fIRPDJ5MYcg"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td><!--M8L09-->
+     <td colspan="2"><iframe width="560" height="315" src="https://www.youtube.com/embed/fIRPDJ5MYcg"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+<form id="Waluigi" action="https://example.com/" method="post">
+<fieldset id="WAInfo">
+<label for="question1">Should Waluigi be included in Ultimate?*</label><br/>
+Heckin No!
+<input name="Question" id="question1" type="range" value="1" step="2" min="0" max="10" />
+Full WA!<br/>
+<input type="submit" value="submit">
+</fieldset>
+</form></td><!--M8L09-->
      </tr>
      </tbody>
         <tfoot>      
      <tr>
     <th >Sources used</th>
-     <td colspan="2"><a href="https://en.wikipedia.org/wiki/Apex_(tournament)#apex"><!--M6L04 spanning columns for my sorted citations and websites. -->
+     <td colspan="2"><a href="https://en.wikipedia.org/wiki/Apex_(tournament)#apex"><!--M6LO4 spanning columns for my sorted citations and websites. -->
 Wikipedia Apex</a>
     <a href="https://company.dreamhack.com/ ">
 DreamHack

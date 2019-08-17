@@ -1,0 +1,11 @@
+section > figure > img {
+
+    display: block;
+
+    width: 25%;
+
+    float: left;
+
+    margin-bottom: 20px;
+
+}

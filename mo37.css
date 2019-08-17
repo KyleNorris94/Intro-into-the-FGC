@@ -16,16 +16,24 @@ V2 Assignment
 
 /* Main Structural Styles */
 
-html {
-    background-image: url(chunli.jpg), url(ryu.jpg);/* M4L02 2 background images */
-background-position:left, right;   
-background-repeat: no-repeat, no-repeat;
- background-size: 30% 100%, 30% 100%;
-
-    
-
-
+html#mo37 {
+     background: url(moment37.jpg);
+background-repeat: repeat-y;
+background-position:center;
+background-size: cover;
 }
+
+
+html#mo37 > body > header > img#r1{
+  float: right;
+    width: 40%;
+}
+html#mo37 > body > header > img#r2{
+   
+    width: 40%;
+ 
+}
+
 
 figure {
     perspective: 500px;
@@ -35,8 +43,8 @@ figure.jwong {
   float: left;
     width: 60%;
 position: relative;
-right: 12%;
- transform: rotateZ(-25deg) rotateY(23deg) rotateX(-23deg);  /* M4L08 used to shift the picture slightly up */
+right: 15%;
+ transform: rotateZ(-25deg) rotateY(23deg) rotateX(-23deg);  /* M4LO8 used to shift the picture slightly up */
  }
  
 figure.Duma {
@@ -44,8 +52,8 @@ figure.Duma {
  width: 60%;
 position: relative;
 top: 12px;
-right: 14px;
- transform: rotateZ(15deg) rotateY(15deg) rotateX(15deg);  /* M4L08 used to shift the picture slightly up */
+right: -150px;
+ transform: rotateZ(15deg) rotateY(15deg) rotateX(15deg);  /* M4LO8 used to shift the picture slightly up */
  /*display: -webkit0box;
  display: -moz-box;
  display: -ms-flexbox;

@@ -49,11 +49,11 @@ body#EVO main {
     
 background: rgba(232, 124, 213, 1.0);
 background: -webkit-radial-gradient(center, rgba(232, 124, 213, 1), rgba(158, 83, 82, 1));
-background: -moz-radial-gradient(center, rgba(232, 124, 213, 1), rgba(158, 83, 82, 1));/* M4L04 gradient. also make sure to add proper webkit */
+background: -moz-radial-gradient(center, rgba(232, 124, 213, 1), rgba(158, 83, 82, 1));/* M4LO4 gradient. also make sure to add proper webkit */
 background: radial-gradient(ellipse at center, rgba(232, 124, 213, 0.8), rgba(158, 83, 82, 0.9));
 }
- header h1 {
-    border-bottom: 2px solid black;
+ header h1, body#EVO > header > h1 {
+
     color:black;
     margin-left: auto;
     margin-right: auto;
@@ -105,24 +105,20 @@ background-repeat: no-repeat;
 
     
 }
-main#ProP {
-    /* M5L05 used to style these sections*/
-    display: -webkit-flex;
-    display: flex;
-flex-direction: row;
-flex-wrap:nowrap;
-justify-content: space-around;
-align-items: center;
-align-content: center;
 
-}
 
 main#ProP figcaption {
     background: rgba(222, 222, 235, 100);
     opacity: 0.95;
      
 }
-
+main#ProP {
+    display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+align-content: center;
+}
 main#ProP figure.ProP {
   -webkit-flex: 2 1 auto;
   flex: 2 1 200px;/* M5L06 used to style these sections*/
@@ -131,6 +127,7 @@ main#ProP figure.ProP {
     align-self: center;
     box-shadow: 12px 12px 12px gray;
     width: 100%;
+
 }
 
 figure.ProP > img {
@@ -147,6 +144,59 @@ figure.ProP > img {
 html#ProP2 {
 background-image:  linear-gradient(45deg, #77ad8e, #80af86);
 }
+/*MO37*/
+html#mo37 > body > header > img#r1{
+  float: right;
+    width: 40%;
+}
+html#mo37 > body > header > img#r2{
+   
+    width: 40%;
+ 
+}
+html#mo37 {
+     background: url(moment37.jpg);
+background-repeat: repeat-y;
+background-position:center;
+background-size: cover;
+}
+
+
+
+
+figure {
+    perspective: 500px;
+ 
+}
+figure.jwong {
+  float: left;
+    width: 60%;
+position: relative;
+right: 15%;
+ transform: rotateZ(-25deg) rotateY(23deg) rotateX(-23deg);  /* M4LO8 used to shift the picture slightly up */
+ }
+ 
+figure.Duma {
+ float: right;
+ width: 60%;
+position: relative;
+top: 12px;
+right: -150px;
+ transform: rotateZ(15deg) rotateY(15deg) rotateX(15deg);  /* M4LO8 used to shift the picture slightly up */
+ /*display: -webkit0box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+ flex-flow: column nowrap;
+ */}
+ figure.Duma img, figure.jwong img{
+margin-left: auto;
+margin-right: auto;
+ }
+ body, footer {
+     width: 100%;
+ }
 /*styles for rest of site*/
 
 figaption.DBZ, figaption.SC6 {
@@ -267,7 +317,7 @@ font-size: 0.87em;
 }
 
 table#Updates {/*keep this on table while updating */
-    border-radius: 40px 47px 80px;/* M4L05, box-shadowing, enveloping table in a box-shadow */
+    border-radius: 40px 47px 80px;/* M4LO5, box-shadowing, enveloping table in a box-shadow */
      border-left: 5px solid rgb(26, 56, 89);
     border-right: 5px solid rgb(26, 56, 89);
     box-shadow: rgb(26, 56, 89) 15px 15px 75px,
@@ -433,7 +483,7 @@ bottom: 2900px;
 left: 702px;
 -webkit-border-radius: 35px 35px 45px  20px;
 -moz-border-radius: 35px 35px 45px  20px;
-border-radius: 35px 35px 45px  20px;  /*M4L03 use of rounded borders*/
+border-radius: 35px 35px 45px  20px;  /*M4LO3 use of rounded borders*/
 width: 30%;
 opacity: 0.95;
 background-image: linear-gradient(55deg, #b0bed5, #a4b3e9, #aba4f7, #c38efb, #e56ef0);
@@ -578,19 +628,19 @@ width: 200px;
     
 img.vikitty  {
     width: 12%;
-    opacity: 0.55;/*M4L06 used to create this  effect */
+    opacity: 0.55;/*M4LO6 used to create this  effect */
 }
 img.sajam  {
     width: 12%;
-    opacity: 0.55;/*M4L06 used to create this  effect */
+    opacity: 0.55;/*M4LO6 used to create this  effect */
 }
 img.jchen  {
     width: 12%;
-    opacity: 0.55;/*M4L06 used to create this  effect */
+    opacity: 0.55;/*M4LO6 used to create this  effect */
 }
 img.D1  {
     width: 12%;
-    opacity: 0.55;/*M4L06 used to create this  effect */
+    opacity: 0.55;/*M4LO6 used to create this  effect */
 }
 img.GRV, img.mk,img.yuk,img.clear, img.go, img.inf, img.ash, img.ash, img.bon   {
     width: 100%;
@@ -623,7 +673,70 @@ div.col-2-3 {
    clear: right;
    width: 67%;
 }
-
+/*v3 updates, arrange later */
+p > iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+form#Survey {
+    width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+fieldset#surInfo {/*M7L011 created different background colors for the textbox and centered form*/
+    background: rgb(255, 140, 26);
+}
+input#question1:focus:valid {
+    background: rgb(26, 255, 163);
+}
+input#question1:focus:invalid {
+    background: rgb(255, 0, 102);
+}
+div > figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+}
+div#sctn1 > figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-end;
+    
+}
+div > figure >  img {
+    display: block;
+    width: 16%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+div > figure >  img.DBZ, img.SC6 {
+    display: block;
+    width: 16%;
+    float: right;
+        margin-left: auto;
+    margin-right: auto;
+}
+audio {/* M8L012 formatted media */
+    display: block;
+margin: 10px auto;
+margin-left: auto;
+margin-right: auto;
+}
+div > figure > figcaption {
+        margin-left: auto;
+    margin-right: auto;
+    font-family: Lucida Console;
+    border-bottom: 2px solid black;
+}
+section#COMM > a
 
 /* Footer Styles */
 
@@ -633,6 +746,10 @@ div.col-2-3 {
             clear: both;
             width: 100%;
 }
+body#pp > footer {
+    width: 100%;
+    background-color: red;
+}
 footer::after { /*inserted container collapse*/
 
     clear: both;
@@ -641,14 +758,13 @@ footer::after { /*inserted container collapse*/
 }
 
 
-
 /* ===
 mobile styles: 0 to 480 pixels
 ======*/
 
 @media only screen and (max-width: 480px) {
 /*style rules*/
-    ul.submenu {/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
+    ul.row {/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
           display: none;
           position:absolute;
           width: 100%;
@@ -656,7 +772,7 @@ mobile styles: 0 to 480 pixels
           
 }
           
-    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {/*M5L04 helped to create a pulldown */
+    a#icon:hover+ul.row, ul.row:hover {/*M5L04 helped to create a pulldown */
         display: block;
             
         
@@ -666,14 +782,14 @@ nav.horizontal {
     line-height: 2.2em;
 
        }
-    ul.submenu  a{/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
+    ul.submenu  a{/* M5LO3, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
        box-shadow: rgba(0, 0, 1, 0.7) 1px 1px 1px 1px;
           float: left;
           width: 100%;
           position: relative;
 }
 
-body#INDEX {/*M5L07used tp style the index*/
+body#INDEX, html#mo37, html#ProP2, html#evohtml {/*M5LO7used tp style the index*/
     display:-webkit-box;
     display:-moz-box;
     display:-ms-flexbox;
@@ -690,7 +806,7 @@ width: 100%;
     background-color: hsl(137, 52%, 83%); /*M2LO15 mainline color */
     background-color: rgb(189, 234, 202); 
 }
-body#INDEX > header h1 {
+body#INDEX > header h1, body#EVO > header > h1  {
 
 font-size: 1em;
 }
@@ -732,8 +848,41 @@ flex-shrink: 1;
 div.row, div.col-1-3, div.col-2-3 {
     display: none;
 }
-section#COMM > a {
+html#mo37 {
+      background: hsl(137, 52%, 83%); /*M2LO15 mainline color */
+    background: rgb(189, 234, 202);
+}
+html#mo37 header {
+    display: flex;
+    	align-items: center;
+	align-content: space-between;
+   flex-basis: 250px;
+flex-grow: 1;
+flex-shrink: 2;
+}
+html#mo37 header h1, html#evohtml > header h1, header.steel > h1 {
+    display: block;
+   font-size: 1em;
+    text-align: center;
+}
+html#mo37 header img {
     display: none;
+}
+main#ProP > figure.ProP {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+    
+}
+body#EVO > main > p {
+    display: block;
+}
+body#EVO > main > figure{
+    display: none;
+}
+body#pp > footer {
+    width: 100%;
+    background-color: red;
 }
 }
 
@@ -741,7 +890,10 @@ section#COMM > a {
 Tablet styles: 481 pixels and greater
 ======*/
     @media only screen and (min-width: 481px) {
-          ul.submenu {
+        a#icon {
+    display: none;
+}
+             ul.submenu {
           display: none;
                position:absolute;
           width: 100%;
@@ -749,13 +901,16 @@ Tablet styles: 481 pixels and greater
     a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
         display: block;
 }
-    ul.submenu  a{/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
+    ul.submenu  a{/* M5LO3, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
        box-shadow: rgba(0, 0, 1, 0.7) 1px 1px 1px 1px;
           float: left;
           width: 100%;
           position: relative;
 }
-body#INDEX {/*M5L07used tp style the index*/
+ul.row {
+    width: 100%;
+}
+body#INDEX {/*M5LO7used tp style the index*/
     display:-webkit-box;
     display:-moz-box;
     display:-ms-flexbox;
@@ -772,6 +927,10 @@ width: 100%;
     background-color: hsl(137, 52%, 83%); /*M2LO15 mainline color */
     background-color: rgb(189, 234, 202); 
 }
+header h1 {
+font-size: 1.2em;
+    
+}
 header, footer {
     
     width: 100%;
@@ -783,13 +942,41 @@ div.row, div.col-1-3, div.col-2-3 {
 section#COMM > a {
     display: none;
 }
-    }
+    
+html#mo37 {
+      background: hsl(137, 52%, 83%); /*M2LO15 mainline color */
+    background: rgb(189, 234, 202);
+}
+html#mo37 header {
+    display: flex;
+    	align-items: center;
+	align-content: space-between;
+   flex-basis: 250px;
+flex-grow: 1;
+flex-shrink: 2;
+}
+html#mo37 header h1 {
+    display: block;
+   font-size: 1em;
+    text-align: center;
+}
+body#EVO > main > p {
+    display: none;
+}
+body#pp > footer {
+    width: 100%;
+    background-color: red;
+}
+
+}
 
 /* ===
 Desktop styles: 769 pixels and greater
 ======*/
     @media only screen and (min-width: 769px) {
-
+a#icon {
+    display: none;
+}
         ul.submenu {
           display: none;
                position:absolute;
@@ -798,7 +985,7 @@ Desktop styles: 769 pixels and greater
     a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
         display: block;
 }
-    ul.submenu  a{/* M5L03, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
+    ul.submenu  a{/* M5LO3, will impact the website by allowing the website to be seen on a mobile phone. It compresses the navigation into the listing.*/
        box-shadow: rgba(0, 0, 1, 0.7) 1px 1px 1px 1px;
           float: left;
           width: 100%;
@@ -831,6 +1018,106 @@ div.row, div.col-1-3, div.col-2-3 figcaption {
     flex: 1 2 auto;
     font-size:100%;
 }
+/*M8L010 Created a transition focusing on to look at fanart! */
+section#COMM a {
+  display: block;
+    font-size: 0.85em;
+    text-shadow: rgba(140, 97, 166, 0.8) 2px -4px 2px;
+    transition: color 2s ease 1s,
+    font-size 2s ease-in,
+    text-shadow 2s ease-out;
+                
 }
+section#COMM a:hover {
+    font-size: 2.5em;
+    color: rgba(249, 115, 109, 0.8);
+ 
+}
+html#mo37 {
+     background: url(moment37.jpg);
+background-repeat: repeat-y;
+background-position:center;
+background-size: cover;
+}
+
+/*MO37*/
+html#mo37 > body > header > img#r1{
+  float: right;
+    width: 40%;
+}
+html#mo37 > body > header > img#r2{
+   
+    width: 40%;
+ 
+}
+
+
+figure {
+    perspective: 500px;
+ 
+}
+figure.jwong {
+  float: left;
+    width: 60%;
+position: relative;
+right: 15%;
+ transform: rotateZ(-25deg) rotateY(23deg) rotateX(-23deg);  /* M4LO8 used to shift the picture slightly up */
+ }
+ 
+figure.Duma {
+ float: right;
+ width: 60%;
+position: relative;
+top: 12px;
+right: -150px;
+ transform: rotateZ(15deg) rotateY(15deg) rotateX(15deg);  /* M4LO8 used to shift the picture slightly up */
+ /*display: -webkit0box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+ flex-flow: column nowrap;
+ */}
+ figure.Duma img, figure.jwong img{
+margin-left: auto;
+margin-right: auto;
+ }
+ body, footer {
+     width: 100%;
+ }
+main#ProP {
+    display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+align-content: center;
+}
+main#ProP figure.ProP {
+  -webkit-flex: 2 1 auto;
+  flex: 2 1 200px;/* M5L06 used to style these sections*/
+    border: 2.89px solid black;
+    order: 99;
+    align-self: center;
+    box-shadow: 12px 12px 12px gray;
+    width: 100%;
+
+}
+
+figure.ProP > img {
+    width: 100%;
+    border-bottom:2.89px solid black;
+    margin-left:auto;
+    margin-right:auto;
+ 
+}
+body#EVO > main > p {
+    display: none;
+}
+body#pp > footer {
+    width: 100%;
+    background-color: red;
+}
+}
+
 
 
